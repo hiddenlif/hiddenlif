@@ -17,6 +17,17 @@ Programming tasks for scientific data analysis, written for AI evaluation. Each 
 | [Potency Assay Qualification](https://github.com/hiddenlif/PotencyAssayQualification) | Qualify a cell-based reporter-gene potency assay from plate, dilution and liquid-handler records: relative potency against a reference, curve acceptance, accuracy, precision and a study verdict. Synthetic studies, three signed-off practice studies. |
 | [Lab Data Recovery](https://github.com/hiddenlif/LabDataRecovery) | Repair a Python/SQLite application so corrected evidence, queued analyses, historical reports and recovery from incomplete migrations agree, while preserving immutable history. |
 
+## Virtual labs and scientific analysis tasks
+
+These tasks include interactive simulated experimentation, computational experimental design and analysis of supplied synthetic data. Reference solutions, held-out cases and verifiers remain private. Historical reference checks establish only the stated local execution results.
+
+| Task | Workflow and execution evidence |
+|---|---|
+| [Virtual Lab: thermodynamic design](https://github.com/hiddenlif/VirtualLabThermodynamicDesign) | Choose calorimetry experiments and use their simulated measurements to certify the operating response of two synthetic protein lots. Experiment choices affect both the observations and irreversible stock consumption. Three historical reference runs passed, each accepting all three campaigns. A no-op scored zero. These are local reference results, not blind solver results or platform approval. |
+| [Virtual Lab: photochemical control](https://github.com/hiddenlif/VirtualLabPhotochemicalControl) | Choose diagnostic pulses for a simulated photoredox reactor, inspect their returned readings, and control flow, illumination, quenching, mitigation and product collection under shared resource limits. Successful execution of this exact version was not established in the reviewed execution records. An older version has successful reference receipts; those results do not validate this version. |
+| [Virtual Lab: clamp protocol](https://github.com/hiddenlif/VirtualLabClampProtocol) | Design an ordered voltage-clamp protocol for a synthetic ion-channel model. Candidate protocols produce simulated currents and information metrics across four disclosed cell variants. This is prospective protocol optimization rather than a closed-loop acquisition campaign. A historical clean-extraction container run passed all five reference checks. A no-op and two legal negative controls scored zero. These are local reference results, not blind solver results or platform approval. |
+| [Scientific Analysis: ITC binding kinetics](https://github.com/hiddenlif/ITCBindingKinetics) | Estimate binding affinity, enthalpy, stoichiometry and association rates from supplied synthetic calorimetry exports. This task analyzes fixed traces; it does not provide interactive experimental acquisition. Successful execution of this exact version was not established in the reviewed execution records. |
+
 ## Analysis projects
 
 | Project | What to look for |
