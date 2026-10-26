@@ -17,7 +17,33 @@ My work connects experimental judgment with reproducible analysis: define the qu
 | [Cytometry Gating](https://github.com/hiddenlif/CytometryGating) | Preserve public FCS provenance, inspect event plots and check gate transfer between openCyto and FlowKit. | Development project with executed engineering checks; biological gating performance unvalidated. |
 | [Lab Data Reconciliation](https://github.com/hiddenlif/LabDataReconciliation) | Resolve revisions, duplicates, units and conflicting metadata with a traceable policy and an independent differential implementation. | Completed analysis and reusable CLI; synthetic exports. |
 | [Potency Assay Qualification](https://github.com/hiddenlif/PotencyAssayQualification) | An AI coding task covering curve acceptance, relative potency, accuracy, precision and a study verdict. | Public task starter and three synthetic practice studies; reference and verifier private. |
-| [Flow Cytometry Virtual Lab](https://github.com/hiddenlif/VirtualLabFlowCytometry) | An AI task combining acquisition choices, controls, spillover unmixing, gates and rare-population uncertainty. | Interactive synthetic simulator; local reference and starter checks. |
+| [Virtual Lab: flow cytometry](https://github.com/hiddenlif/VirtualLabFlowCytometry) | An AI task combining acquisition choices, controls, spillover unmixing, gates and rare-population uncertainty. | Interactive synthetic simulator; local reference and starter checks. |
+
+## Virtual labs
+
+Each virtual lab is a runnable simulator: choose a measurement, control or intervention, receive newly simulated evidence, and decide what it supports. Observations are synthetic unless a lab cites public source data.
+
+### Interactive research labs
+
+| Lab | What you do | Data and status |
+|---|---|---|
+| [Virtual Lab: iPSC bioreactor](https://github.com/hiddenlif/VirtualLabIPSCBioreactor) | Run an iPSC expansion-and-banking campaign in a local web app: request measurements, adjust perfusion, investigate instrument faults and make a simulated QC recommendation. | Synthetic, documented process model; not calibrated to experimental campaigns. Executed comparator study and tests included. |
+| [Virtual Lab: spatial tumor atlas](https://github.com/hiddenlif/VirtualLabSpatialTumor) | Explore a measured 2D colorectal cancer atlas: quantify CD8-to-tumor proximity, reconstruct a masked protein channel and run conditional movement scenarios. | Public CODEX data (CC BY 4.0); movement is simulated and makes no clinical predictions. Executed investigation and tests included. |
+
+### AI evaluation labs
+
+These repositories publish the task statement, simulator, practice material and starter. Reference solutions, held-out cases and verifiers remain private.
+
+| Lab | Required work | Lab type |
+|---|---|---|
+| [Virtual Lab: flow cytometry](https://github.com/hiddenlif/VirtualLabFlowCytometry) | Allocate controls and events, unmix signals, define gates and estimate rare-cell frequencies with intervals. | Interactive synthetic lab. |
+| [Virtual Lab: vector copy number](https://github.com/hiddenlif/VirtualLabVectorCopyNumber) | Allocate digital PCR wells, DNA, controls and culture time across synthetic lots with inhibition and carryover. | Interactive synthetic lab. |
+| [Virtual Lab: single-cell study design](https://github.com/hiddenlif/VirtualLabSingleCellDesign) | Budget donors, batches, cells and reads, then perform donor-aware treatment-effect analysis. | Interactive, simplified 40-gene count simulator. |
+| [Virtual Lab: thermodynamic design](https://github.com/hiddenlif/VirtualLabThermodynamicDesign) | Choose calorimetry measurements and certify protein-lot responses while consuming stock. | Interactive synthetic lab. |
+| [Virtual Lab: photochemical control](https://github.com/hiddenlif/VirtualLabPhotochemicalControl) | Interpret diagnostic readings and control a photoredox reactor under shared resource limits. | Interactive synthetic lab. |
+| [Virtual Lab: clamp protocol](https://github.com/hiddenlif/VirtualLabClampProtocol) | Optimize an ordered voltage-clamp protocol across four disclosed synthetic ion-channel variants. | Prospective computational design. |
+
+The evaluation-lab READMEs document local grader checks with a reference solution and an unchanged starter. Those checks establish bounded execution evidence. Measuring AI performance requires actual solver runs and a defined evaluation protocol. Simulation results also require separate empirical work before they support laboratory or clinical claims.
 
 ## Scientific AI evaluation tasks
 
@@ -27,15 +53,7 @@ These repositories publish the task statement, practice material and starter. Re
 |---|---|---|
 | [Reporter-Gene Potency Assay Qualification](https://github.com/hiddenlif/PotencyAssayQualification) | Qualify a potency assay using synthetic plate, dilution and liquid-handler records. Practice QA sign-offs are fictional scenario records. | Scientific coding task. |
 | [Laboratory Data Recovery](https://github.com/hiddenlif/LabDataRecovery) | Repair a Python/SQLite application while preserving corrected evidence, queued analyses, historical reports and migration recovery. | Scientific software repair task; synthetic fixtures. |
-| [Flow Cytometry Acquisition and Analysis](https://github.com/hiddenlif/VirtualLabFlowCytometry) | Allocate controls and events, unmix signals, define gates and estimate rare-cell frequencies with intervals. | Interactive synthetic lab. |
-| [Digital PCR Vector Copy Number](https://github.com/hiddenlif/VirtualLabVectorCopyNumber) | Allocate wells, DNA, controls and culture time across synthetic lots with inhibition and carryover. | Interactive synthetic lab. |
-| [Single-Cell Study Design](https://github.com/hiddenlif/VirtualLabSingleCellDesign) | Budget donors, batches, cells and reads, then perform donor-aware treatment-effect analysis. | Interactive, simplified 40-gene count simulator. |
-| [Calorimetry Experiment Design](https://github.com/hiddenlif/VirtualLabThermodynamicDesign) | Choose measurements and certify protein-lot responses while consuming stock. | Interactive synthetic lab. |
-| [Photochemical Reactor Control](https://github.com/hiddenlif/VirtualLabPhotochemicalControl) | Interpret diagnostic readings and control a photoredox reactor under shared resource limits. | Interactive synthetic lab. |
-| [Voltage-Clamp Protocol Optimization](https://github.com/hiddenlif/VirtualLabClampProtocol) | Optimize an ordered protocol across four disclosed synthetic ion-channel variants. | Prospective computational design. |
 | [ITC Binding Kinetics](https://github.com/hiddenlif/ITCBindingKinetics) | Infer binding and kinetic parameters from supplied synthetic calorimetry exports. | Fixed-data scientific analysis task. |
-
-The virtual-lab and simulator-task READMEs document local grader checks with a reference solution and an unchanged starter. Those checks establish bounded execution evidence. Measuring AI performance requires actual solver runs and a defined evaluation protocol. Simulation results also require separate empirical work before they support laboratory or clinical claims.
 
 ## Additional executed analysis cases
 
