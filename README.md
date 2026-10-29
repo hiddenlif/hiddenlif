@@ -6,7 +6,6 @@ I build tools that help scientists work with reliable data and defensible result
 
 My work connects experimental judgment with reproducible analysis: define the question, preserve the evidence, test plausible alternatives and explain what the result supports.
 
-[TrueGate Bio](https://truegatebio.com)
 
 ## Start here
 
