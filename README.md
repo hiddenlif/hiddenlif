@@ -7,6 +7,26 @@ I build tools that help scientists work with reliable data and defensible result
 My work connects experimental judgment with reproducible analysis: define the question, preserve the evidence, test plausible alternatives and explain what the result supports.
 
 
+## Benchmarks and reinforcement learning
+
+I contribute tasks to a public command-line benchmark and peer-review reference solutions. My independent [Lab Data Recovery task](https://github.com/hiddenlif/LabDataRecovery) gives a public example of the kind of engineering work I evaluate. It asks an agent to repair a Python/SQLite application while preserving earlier results and the records that support them.
+
+In [Quality Record Bench](https://github.com/hiddenlif/QualityRecordBench/blob/main/REPORT.md), I tested whether a correct decision came with the right evidence. A fixed answer got nine of 12 decisions right and zero of 12 cases fully correct. The report includes the controls, the three-model pilot and its limitations.
+
+### RL environment study
+
+Can an agent learn which test to run next when it gets feedback only on its final diagnosis? I built a synthetic debugging environment where a policy chooses three tests before it has to identify the hidden fault or decide that the program works correctly.
+
+I trained a PyTorch policy with two 64-unit hidden layers and a learned value baseline. Each of three seeds ran for 600 Adam updates of 256 episodes on one CPU thread, for 460,800 training episodes in total. All three policies were evaluated on the same 12,288 held-out episodes.
+
+| Diagnostic strategy | Correct diagnoses |
+|---|---:|
+| Best fixed set of three tests | 56.4% |
+| Learned policies, across three seeds | 79.8% to 81.2% |
+| Adaptive decision tree | 81.2% |
+
+The learned policies improved on a fixed test set. The strongest matched the adaptive tree to one decimal place. Each seed consistently missed a different fault, a failure pattern that the aggregate score obscured.
+
 ## Start here
 
 | Featured project | What it demonstrates | Status and data |
